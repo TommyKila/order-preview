@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    font-family: red-hat;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: red-hat;
+    src: url(./RedHatDisplay-VariableFont_wght.ttf);
+}
+
+body {
+    background-image: url(./pattern-background-desktop.svg);
+    background-color: hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 26%;
+    border-radius: 1em;
+    margin: 2.9em 0;
+}
+
+/* Styling */
+
+.img-main {
+    width: 100%;
+    border-radius: 1em 1em 0 0;
+}
+
+.title,
+.plan {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.title {
+    margin: 1.5em 0 0;
+    font-size: 1.5rem;
+}
+
+.plan,
+.desc,
+.price,
+.proceed,
+.cancel {
+    font-size: 0.9rem;
+}
+
+.desc,
+.price {
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+
+.desc {
+    width: 80%;
+    text-align: center;
+    line-height: 1.5em;
+    margin: 1.25em 0 0;
+}
+
+.option {
+    background-color: hsl(225, 100%, 97%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 1.75em 0 0;
+    padding: 1.25em;
+    border-radius: 1em;
+}
+
+.sub-option {
+    display: flex;
+    justify-content: space-around;
+    width: 55%;
+}
+
+.plan {
+    margin: 0 0 0.3em;
+}
+
+.change {
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    font-size: 0.8rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.proceed {
+    width: 80%;
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+    border: none;
+    border-radius: 0.5em;
+    font-weight: 700;
+    padding: 0.9em 0;
+    margin: 1.75em 0 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.cancel {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    margin: 1.75em 0 2.8em;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.pay {
+    align-self: center;
+}
+
+.change:hover,
+.proceed:hover {
+    opacity: 0.7;
+}
+
+.cancel:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+@media only screen and (max-width:1440px) {
+    .main {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .main {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .main {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    body {
+        background-image: url(./pattern-background-mobile.svg);
+    }
+    
+    .main {
+        width: 90%;
+    }
+}
