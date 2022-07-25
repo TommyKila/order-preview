@@ -1,13 +1,8 @@
 * {
     box-sizing: border-box;
-    font-family: red-hat;
+    font-family: 'Red-Hat-Display',sans-serif;
     margin: 0;
     padding: 0;
-}
-
-@font-face {
-    font-family: red-hat;
-    src: url(./RedHatDisplay-VariableFont_wght.ttf);
 }
 
 body {
